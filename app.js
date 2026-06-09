@@ -3,6 +3,9 @@ const emailInput = document.getElementById('emailInput');
 const btnGenerar = document.getElementById('btnGenerar');
 const resultadoContenedor = document.getElementById('resultadoContenedor');
 const tokenOutput = document.getElementById('tokenOutput');
+const nomre_alumno = "  Diana Laura Cesenas Rivera mi programa termino a las: ";
+const fecha = new Date();
+
 
 // 2. Escuchar el evento de clic en el botón
 btnGenerar.addEventListener('click', () => {
@@ -28,6 +31,7 @@ btnGenerar.addEventListener('click', () => {
     // Removemos la clase 'hidden' para que el contenedor sea visible en la pantalla
     resultadoContenedor.classList.remove('hidden');
      console.log("La accion de conversion de token ha sido correcta"); // Para depuración en la consola
+     console.log(nomre_alumno + fecha);
 
     // Opcional: Cambiamos el estilo dinámicamente mediante el DOM para dar feedback visual
     tokenOutput.style.backgroundColor = "#e8f8f5"; 
