@@ -11,6 +11,7 @@ btnGenerar.addEventListener('click', () => {
     // Validación simple mediante el DOM
     if (correo === "" || !correo.includes('@')) {
         alert("Por favor, introduce un correo electrónico válido.");
+        console.error("No pusiste arroba, ponte listo!!!!!!");
         return;
     }
 
